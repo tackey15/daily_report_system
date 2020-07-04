@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html>
 <c:import url="..//layout/app.jsp">
     <c:param name="content">
         <c:if test="${flush != null}">
@@ -22,7 +21,7 @@
                         <td><c:out value="${employee.name}" /></td>
                         <td>
                             <c:choose>
-                                <c:when test="${mployee.delete_flag== 1}">
+                                <c:when test="${employee.delete_flag == 1}">
                                      (削除済み)
                                 </c:when>
                                 <c:otherwise>
